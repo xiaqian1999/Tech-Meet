@@ -23,22 +23,22 @@ User are able to choose the events they want to participate in according to diff
 This idea is originally form during my last semester, when I was junior and trying to find job opportunities and platform that I could learn more tech related knowledges. So here are few well known sites that I find which includes a lot of tech events related information, like meet up for different workshops. So as you could see, since each sites are providing some useful information and events that I want to attend, so I have to subscribe all of their weekly newsletter so I could get the information as soon as possible. But understanding that I don’t only subscribe these sites, there are lots of small sites where they also provides helpful contents. Example like CodePath, break through tech or general CUNY technology weekly newsletters. 
 
 ## Industry and user focus
-CUNY & SUNY
-New York Students
-Students involved in Tech
-High School - College Level
+* CUNY & SUNY
+* New York Students
+* Students involved in Tech
+* High School - College Level
 
 ## Expect impact
-Increase Student’s experience
-Increase the number of students in tech
-Increase Awareness of different opportunities
-Decrease Time to find events
+* Increase Student’s experience
+* Increase the number of students in tech
+* Increase Awareness of different opportunities
+* Decrease Time to find events
 
 ## Demo Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='100' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='500' alt='Video Walkthrough' />
 
 ## Notes
 
