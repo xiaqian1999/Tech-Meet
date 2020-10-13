@@ -7,8 +7,14 @@ One-Stop Website for All Tech Events
 
 ## Project Idea Website
 https://xiaqian1999.wixsite.com/team6
-## System Functions
 
+## Demo Video Walkthrough 
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+
+## System Functions
 The following **required** functionality is complete:
 * [ ] User can enter or filter the date they want to attend for events
 * [ ] User can search through keyword or filter by categories to choose the events they want to attend
@@ -33,12 +39,6 @@ This idea is originally form during my last semester, when I was junior and tryi
 * Increase the number of students in tech
 * Increase Awareness of different opportunities
 * Decrease Time to find events
-
-## Demo Video Walkthrough 
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='500' alt='Video Walkthrough' />
 
 ## Notes
 
