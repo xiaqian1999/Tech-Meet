@@ -42,4 +42,3 @@ This idea is originally form during my last semester, when I was junior and tryi
 
 ## Notes
 
-Describe any challenges encountered while building the app.
