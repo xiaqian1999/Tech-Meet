@@ -10,7 +10,7 @@ https://xiaqian1999.wixsite.com/team6
 
 ## Demo Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of demo system functions:
 
 <img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
