@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link href="stylesheet.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>Tech Meet</h1>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for events">
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('hackathon')"> Hackathon</button>
+      <button class="btn" onclick="filterSelection('workshop')"> Workshop</button>
+      <button class="btn" onclick="filterSelection('gender')"> Gender</button>
+      <button class="btn" onclick="filterSelection('careerfair')"> Career Fair</button>
+      <button class="btn" onclick="filterSelection('internship')"> Internship</button>
+    </div>
+
+    <ul id="myUL">
+      <li class="filterDiv hackathon"><a href="https://dandyhacks-2020.devpost.com/?ref_feature=challenge&ref_medium=home">DandyHacks 2020
+        <br><span class="small">Online</span><br>
+        <span class="small">About: At DandyHacks, we are fully committed to being an accessible and beginner-friendly hackathon, offering workshops to teach beginners valuable skills and mentors to guide and advise hackers throughout the 36 hours. </span><br>
+        <span class="small">Time: October 23, 9 PM - October 25, 9 AM EDT/span></a></li>
+      
+      <li class="filterDiv hackathon"><a href="https://tamudatathon2020.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover">TAMU Datathon 2020
+        <br><span class="small">Online</span><br>
+        <span class="small">About: A datathon is where you build your analytics skill set and create data driven solutions. We provide data science lectures, workshops, challenges, prizes, fun activities, swag, and more. We’ll take care of you while you learn & create!</span><br>
+        <span class="small">Time: Oct 17 – 18, 2020</span></a></li>
+
+      <li lass="filterDiv workshop"><a href="https://www.meetup.com/Tech-After-Hours-NYC/events/269126094/">Python for Webscraping
+        <br><span class="small">Online</span><br>
+        <span class="small">About: We will teach you how to gather any information with BeautifulSoup, Selenium and Splinter.</span><br>
+        <span class="small">Time: Oct 20, 2020 6:00 PM EDT</span></a></li>
+
+      <li lass="filterDiv workshop"><a href="https://www.meetup.com/NYDataScientists/">Plotting and Programming in Python
+        <br><span class="small">Online</span><br>
+        <span class="small">About: This Software Carpentry workshop will introduce the building blocks of the Python scripting environment.</span><br>
+        <span class="small">Time: Oct 25, 2020 7:00 PM EDT</span></a></li>
+
+      <li class="filterDiv hackathon"><a href="https://starhacks-equal-opportunity.devpost.com/?ref_content=default&ref_feature=challenge&ref_medium=discover">Equal Opportunity StarHacks
+        <br><span class="small">Online</span><br>
+        <span class="small">About: StarHacks has partnered with Amgen® and created a 12-hour hackathon, dedicated to being equal-opportunity and spreading the art of programming to all.</span><br>
+        <span class="small">Time: Oct 24, 2020 9 AM - 9 PM EST</span></a></li>
+    </ul>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+    
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+</body>
+</html>

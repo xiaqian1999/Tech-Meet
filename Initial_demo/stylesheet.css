@@ -1,0 +1,119 @@
+body {
+    background-color: antiquewhite;
+}
+
+h1, .month{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+.month{
+    background-color: burlywood;
+    font-size: 30px;
+    letter-spacing: 1px;
+    padding: 25px;
+    border: 1px solid burlywood;
+}
+
+table, thead, th, tbody, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 20px;
+    border-collapse: collapse;
+    border: 1px solid burlywood;
+
+}
+
+tr, td, thead, tbody{
+    padding: 50px 20px;
+    position: relative;
+    border-radius: 2px;
+}
+
+th{
+    color: gray;
+    padding: 20px;
+}
+
+
+td:hover{
+    background: green;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.notification .badge{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: small;
+}
+
+.small{
+    color: gray;
+    font-size: 15px;
+}
+
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+
+  /* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+
