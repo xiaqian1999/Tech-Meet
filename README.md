@@ -5,21 +5,19 @@ Tech Meet
 ## App Idea
 One-Stop Website for All Tech Events
 
-## Project Idea Website
-https://xiaqian1999.wixsite.com/team6
-
 ## Demo Video Walkthrough 
 
 Here's a walkthrough of demo system functions:
 
-<img src='http://g.recordit.co/3plqaB6ajF.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
 ## System Functions
 The following **required** functionality is complete:
-* [ ] User can enter or filter the date they want to attend for events
-* [ ] User can search through keyword or filter by categories to choose the events they want to attend
-* [ ] User will received list of events on the given dates
-* [ ] User will be notified the numbers of events hosted on each day
+* [X] User can enter or filter the date they want to attend for events
+* [X] User can search through keyword or filter by categories to choose the events they want to attend
+* [X] User can add events on given dates
+* [X] User will received list of events on the given dates
+* [X] User will be notified the numbers of events hosted on each day
 
 ## Idea Explaniation
 It is a web-app that tends to organize only tech events for students, so the events been filtered will just be student focused.
@@ -40,5 +38,7 @@ This idea is originally form during my last semester, when I was junior and tryi
 * Increase Awareness of different opportunities
 * Decrease Time to find events
 
-## Notes
+## Future Functionality
+* Use Meetup, Eventbrite API to grab the up to date data
+* Use web scraping to get the data from multiple sites including Dice, Devpost
 
