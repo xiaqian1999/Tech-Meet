@@ -9,7 +9,7 @@ One-Stop Website for All Tech Events
 
 Here's a walkthrough of demo system functions:
 
-<img src='http://g.recordit.co/Mzt7vhUNiD.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/Mzt7vhUNiD.gif' title='Video Walkthrough' width='1000' alt='Video Walkthrough' />
 
 ## System Functions
 The following **required** functionality is complete:
